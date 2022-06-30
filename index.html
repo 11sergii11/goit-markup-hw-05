@@ -57,7 +57,7 @@
       <section class="market wrapper">
         <div class="container">
           <h1 class="solution">Эффективные решения для вашего бизнеса</h1>
-          <button class="order" type="button">Заказать услугу</button>
+          <button class="order" type="button" data-modal-open >Заказать услугу</button>
         </div>
       </section>
 
@@ -433,6 +433,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="close-btn" width="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-xx"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
    <script src="./js/modal.js"></script>
   </body>
 </html>
