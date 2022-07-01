@@ -53,7 +53,6 @@ a {
   margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 94px;
-  /* padding: 0; */
 }
 .container {
   width: 1200px;
@@ -95,6 +94,13 @@ a {
   letter-spacing: 0.02em;
   color: var(--sekond-brand-color);
 }
+.nav-info:hover,
+.nav-info:focus {
+  color: var(--main-brand-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .active::after {
   content: '';
   position: absolute;
@@ -119,14 +125,14 @@ a {
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--text-sekond-color);
+  color: var(--text-main-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tel:hover,
 .mail:hover {
   color: var(--main-brand-color);
-  /* transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .heder-contacts-link + .heder-contacts-link {
   margin-left: 50px;
@@ -283,8 +289,8 @@ a {
   height: 70px;
   bottom: 0;
   font-weight: 700;
-  text-align: center;
-  letter-spacing: 0.03em;
+  /* text-align: center; */
+  /* letter-spacing: 0.03em; */
   text-transform: uppercase;
   color: var(--main-body-color);
   background: rgba(47, 48, 58, 0.8);
@@ -371,7 +377,7 @@ a {
   height: 44px;
   border-radius: 50%;
   color: var(--icons-first-color);
-  transition-property: background-color;
+  transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -383,16 +389,13 @@ a {
 }
 .icons {
   fill: currentColor;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons:hover,
 .icons:focus {
   fill: currentColor;
 }
 
-/* KLIENTS */
+/* ----Постоянные клиенты---- */
 
 .klients-list {
   display: flex;
@@ -415,7 +418,7 @@ a {
   color: var(--icons-first-color);
   border: 1px solid var(--icons-first-color);
   border-radius: 4px;
-  transition-property: border-color;
+  transition-property: border-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -426,9 +429,6 @@ a {
 }
 .client-icon {
   fill: currentColor;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon:hover {
   fill: currentColor;
@@ -477,6 +477,9 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-body-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .e-adress {
   color: var(--e-adress-color);
@@ -485,15 +488,15 @@ a {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress:hover,
 .e-adress:hover,
 .e-adress:focus,
 .adress:focus {
   color: var(--main-brand-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-- иконки футера-- */
@@ -516,14 +519,15 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  color: var(--main-body-color);
   background: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: var(--main-brand-color);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-list {
   display: flex;
@@ -531,9 +535,6 @@ a {
 }
 .footer-soc-list .footer-soc-item + .footer-soc-item {
   margin-left: 10px;
-}
-.footer-soc-link {
-  color: var(--main-body-color);
 }
 .footer-icon {
   fill: currentColor;
@@ -568,6 +569,9 @@ a {
   letter-spacing: 0.03em;
   color: var(--sekond-brand-color);
   background: var(--background-second-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .menu .link:hover,
@@ -576,16 +580,12 @@ a {
   color: var(--main-body-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
 .job-list {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
 }
 .job-project {
   position: relative;
@@ -594,13 +594,16 @@ a {
   margin-left: var(--card-projects-gap);
   margin-top: var(--card-projects-gap);
 }
-.job-project:hover,
+.projekt-link{
+  display: block;
+}
+.projekt-link:hover,
 .projekt-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projekt-link:hover .projekt-text {
+.projekt-link:hover .projekt-text, .projekt-link:focus .projekt-text {
   transform: translateY(0);
 }
 .projekt-img {
@@ -665,7 +668,7 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms, visibility 250ms;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms;
 }
 .modal {
   position: absolute;
@@ -678,7 +681,6 @@ a {
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -695,14 +697,15 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: #000;
   background-color: var(--main-body-color);
+  transition-property: background color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-btn:hover {
+.modal-close-btn:hover, .modal-close-btn:focus {
   cursor: pointer;
+  fill: var(--buttom-second-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.close-btn {
-  fill: currentColor;
 }
 .backdrop.is-hidden {
   opacity: 0;
